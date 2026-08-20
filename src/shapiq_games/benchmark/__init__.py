@@ -71,7 +71,10 @@ from .interventionaltreeshapiq_xai.benchmark import (
 # local explanation games
 from .local_xai.base import LocalExplanation
 from .local_xai.benchmark_image import ImageClassifier as ImageClassifierLocalXAI
-from .local_xai.benchmark_language import SentimentAnalysis as SentimentAnalysisLocalXAI
+from .local_xai.benchmark_language import (
+    LMGeneration as LMGenerationLocalXAI,
+    SentimentAnalysis as SentimentAnalysisLocalXAI,
+)
 from .local_xai.benchmark_tabular import (
     AdultCensus as AdultCensusLocalXAI,
     Amazon as AmazonLocalXAI,
@@ -147,6 +150,7 @@ __all__ = [
     "CaliforniaHousingLocalXAI",
     "ImageClassifierLocalXAI",
     "SentimentAnalysisLocalXAI",
+    "LMGenerationLocalXAI",
     "AnnealingLocalXAI",
     "ArrhythmiaLocalXAI",
     "AmazonLocalXAI",
